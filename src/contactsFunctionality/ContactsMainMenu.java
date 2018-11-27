@@ -11,8 +11,12 @@ public class ContactsMainMenu extends FileReadWrite {
     private static List<String> contactsListString = FileReadWrite.getContactsListString();
 
     private static String userInterface =
-            "\n\nContacts Manager Main Menu" +
-            "\n\n1. View contacts.\n" +
+            "\n\n\n" +
+                    "____ ____ _  _ ___ ____ ____ ___ ____    _  _ ____ _  _ ____ ____ ____ ____    _  _ ____ _ _  _    _  _ ____ _  _ _  _ \n" +
+                    "|    |  | |\\ |  |  |__| |     |  [__     |\\/| |__| |\\ | |__| | __ |___ |__/    |\\/| |__| | |\\ |    |\\/| |___ |\\ | |  | \n" +
+                    "|___ |__| | \\|  |  |  | |___  |  ___]    |  | |  | | \\| |  | |__] |___ |  \\    |  | |  | | | \\|    |  | |___ | \\| |__| \n" +
+                    "                                                                                                                       \n" +
+            "1. View contacts.\n" +
             "2. Add a new contact.\n" +
             "3. Search a contact by name.\n" +
             "4. Delete an existing contact.\n" +
