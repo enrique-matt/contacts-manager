@@ -27,6 +27,8 @@ public class DeleteContact {
 
         if (testNum == 0){
             System.out.println("Invalid Input.");
+        } else if (testNum == 1) {
+            System.out.println("Contact Deleted!");
         }
 
         return contactsListString;
