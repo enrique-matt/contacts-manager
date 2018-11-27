@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SearchContact {
 
-    public static void searchContact(List<String> contactsListString){
+    protected static void searchContact(List<String> contactsListString){
         Input in = new Input(new Scanner(System.in));
 
         System.out.print("\nPlease enter a name to search for: ");
@@ -35,6 +35,5 @@ public class SearchContact {
             System.out.println("Here's your contact: ");
             System.out.println(searchResult);
         }
-
     }
 }

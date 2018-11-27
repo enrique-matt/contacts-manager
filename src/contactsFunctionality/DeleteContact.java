@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class DeleteContact {
 
-    public static List<String> deleteContact(List<String> contactsListString){
+    protected static List<String> deleteContact(List<String> contactsListString){
         Input in = new Input(new Scanner(System.in));
 
-        System.out.print("Please enter a contact name to delete: ");
+        System.out.print("\nPlease enter a contact name to delete: ");
         String contactName = in.getString();
         int testNum = 0;
 

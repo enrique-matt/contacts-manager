@@ -11,7 +11,8 @@ public class ContactsMainMenu extends FileReadWrite {
     private static List<String> contactsListString = FileReadWrite.getContactsListString();
 
     private static String userInterface =
-            "\n1. View contacts.\n" +
+            "\n\nContacts Manager Main Menu" +
+            "\n\n1. View contacts.\n" +
             "2. Add a new contact.\n" +
             "3. Search a contact by name.\n" +
             "4. Delete an existing contact.\n" +
@@ -26,7 +27,7 @@ public class ContactsMainMenu extends FileReadWrite {
 
         switch (menuNum) {
             case 1:
-                System.out.println("Case 1");
+                ShowContacts.showContact(contactsListString);
                 mainMenu();
                 break;
             case 2:
@@ -47,21 +48,5 @@ public class ContactsMainMenu extends FileReadWrite {
                 FileReadWrite.setContactsList(contactsListString);
                 break;
         }
-
-
     }
-
-
-
-
-//    public static void contactsMain() {
-//
-//        AddContact.addContact(contactsListString);
-//
-//    }
-
-//    public static void main(String[] args) {
-//
-//        FileReadWrite.setContactsList(AddContact.addContact(contactsListString));
-//    }
 }
