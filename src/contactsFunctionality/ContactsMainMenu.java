@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ContactsMainMenu extends FileReadWrite {
 
-    private static List<String> contactsListString = FileReadWrite.getContactsListString();
+    private static List<String> contactsListString = getContactsListString();
 
     private static String userInterface =
             "\n\n\n" +
@@ -49,7 +49,7 @@ public class ContactsMainMenu extends FileReadWrite {
             case 5:
                 System.out.println("Are you sure?");
                 in.yesNo();
-                FileReadWrite.setContactsList(contactsListString);
+                setContactsList(contactsListString);
                 break;
         }
     }

@@ -18,7 +18,7 @@ public class DeleteContact {
             int separatorNum = contactsListString.get(i).indexOf("|");
             String nameOnly = contactsListString.get(i).substring(0, separatorNum - 1);
 
-            if (contactName.equalsIgnoreCase(nameOnly)){
+            if (contactName.contains(nameOnly)){
                 contactsListString.remove(i);
                 testNum += 1;
                 break;
